@@ -18,6 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/students','App\Http\Controllers\ApiController@index');
+Route::get('/students/{id}','App\Http\Controllers\ApiController@show');
 
 Route::post('/students','App\Http\Controllers\ApiController@store');
 

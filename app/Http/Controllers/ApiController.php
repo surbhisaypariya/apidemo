@@ -47,4 +47,10 @@ class ApiController extends Controller
         return ['success' => $student  ];
         
     }
+    
+    public function show()
+    {
+        $student = Student::where('id',request('id'))->first();
+        return $student;    
+    }
 }

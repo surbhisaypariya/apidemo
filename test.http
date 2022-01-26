@@ -1,0 +1,27 @@
+GET http://localhost/surbhi/apidemo/api/students 
+
+###
+
+POST http://localhost/surbhi/apidemo/api/students
+Content-Type: application/json
+
+{
+    "name" : "Test 2",
+    "course" : "test 2"
+}
+
+###
+
+put http://localhost/surbhi/apidemo/api/students/5
+Content-Type: application/json
+
+{
+    "name" : "Update",
+    "course" : "Update"
+}
+
+###
+delete http://localhost/surbhi/apidemo/api/students/6
+
+###
+get http://localhost/surbhi/apidemo/api/students/2
